@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "721590978783",
+    "firebase_url": "https://nasabot-5414b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nasabot-5414b",
+    "storage_bucket": "nasabot-5414b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721590978783:android:e33df22922d87131c3416a",
+        "android_client_info": {
+          "package_name": "com.tanjim.transmit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZwZUUVX7WrnrMepteVso2NQDQ3Nqz5EQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
