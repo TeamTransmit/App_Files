@@ -24,7 +24,8 @@ class _ViIndexPageState extends State<ViIndexPage> {
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(30), topLeft: Radius.circular(30)),
           boxShadow: [
-            BoxShadow(color: ColorsUtility.primary, spreadRadius: 0, blurRadius: 2),
+            BoxShadow(
+                color: ColorsUtility.primary, spreadRadius: 0, blurRadius: 2),
           ],
         ),
         child: ClipRRect(
@@ -64,8 +65,10 @@ class _ViIndexPageState extends State<ViIndexPage> {
           // Make background transparent to show gradient
           elevation: 0,
           // Remove shadow if not needed
-          child: const Icon(
-            Icons.qr_code,
+          child: Image.asset(
+            'assets/images/scanner.png',
+            width: 25,
+            height: 25,
             color: Colors.white,
           ),
         ),
@@ -85,59 +88,61 @@ class _ViIndexPageState extends State<ViIndexPage> {
         ),
       ),
       body: Stack(
-            children: [
-              Positioned(
-                top: 0,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 18),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(height: 30,),
-                      const Text(
-                        'Given',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      const Text(
-                        'NDVI 1',
-                        style: TextStyle(
-                          color: Color(0xFF1BA54C),
-                          fontSize: 24,
-                          fontFamily: 'Sen',
-                          fontWeight: FontWeight.w700,
-                          height: 0.06,
-                        ),
-                      ),
-                      const SizedBox(height: 18),
-                      SizedBox(
-                        width: size.width - 30,
-                        child: const Text(
-                          "we’re looking at a landscape that’s holding its ground but isn't quite thriving. This indicates moderate vegetation health—there's some green out there, but it’s not robust. It suggests the presence of plant life, but perhaps the soil moisture isn’t at optimal levels, signaling that the environment may need a boost. We have an opportunity to innovate and optimize resources for better growth.\n\nAn NDVI Index value of +1 represents the pinnacle of success in vegetation. We’re talking about a flourishing ecosystem, where plants are thriving, soaking up sunlight, and utilizing water efficiently. This is a green revolution, showcasing nature’s ability to provide and sustain life.",
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            color: Color(0xFF555555),
-                          ),
-                        ),
-                      )
-                    ],
+        children: [
+          Positioned(
+            top: 0,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: 30,
                   ),
-                ),
+                  const Text(
+                    'Given',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  const Text(
+                    'NDVI 1',
+                    style: TextStyle(
+                      color: Color(0xFF1BA54C),
+                      fontSize: 24,
+                      fontFamily: 'Sen',
+                      fontWeight: FontWeight.w700,
+                      height: 0.06,
+                    ),
+                  ),
+                  const SizedBox(height: 18),
+                  SizedBox(
+                    width: size.width - 30,
+                    child: const Text(
+                      "we’re looking at a landscape that’s holding its ground but isn't quite thriving. This indicates moderate vegetation health—there's some green out there, but it’s not robust. It suggests the presence of plant life, but perhaps the soil moisture isn’t at optimal levels, signaling that the environment may need a boost. We have an opportunity to innovate and optimize resources for better growth.\n\nAn NDVI Index value of +1 represents the pinnacle of success in vegetation. We’re talking about a flourishing ecosystem, where plants are thriving, soaking up sunlight, and utilizing water efficiently. This is a green revolution, showcasing nature’s ability to provide and sustain life.",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFF555555),
+                      ),
+                    ),
+                  )
+                ],
               ),
-              Positioned(
-                  bottom: 100,
-                  child: Image.asset(
-                    'assets/images/spinner.jpeg',
-                    width: size.width,
-                    fit: BoxFit.fitWidth,
-                  ))
-            ],
+            ),
+          ),
+          Positioned(
+              bottom: 100,
+              child: Image.asset(
+                'assets/images/spinner.jpeg',
+                width: size.width,
+                fit: BoxFit.fitWidth,
+              ))
+        ],
       ),
     );
   }

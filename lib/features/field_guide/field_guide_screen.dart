@@ -40,10 +40,8 @@ class _AgriScanScreenState extends State<FieldGuideScreen> {
           // Make background transparent to show gradient
           elevation: 0,
           // Remove shadow if not needed
-          child: const Icon(
-            Icons.qr_code,
-            color: Colors.white,
-          ),
+          child: Image.asset('assets/images/scanner.png', width: 25, height: 25, color: Colors.white,),
+
         ),
       ),
       bottomNavigationBar: Container(
@@ -73,6 +71,7 @@ class _AgriScanScreenState extends State<FieldGuideScreen> {
       ),
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.white,
         leading: Padding(
           padding: const EdgeInsets.only(left: 8.0),

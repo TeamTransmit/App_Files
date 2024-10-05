@@ -4,6 +4,7 @@ class Constants {
   List<BottomNavigationBarItem> navBarsItems() {
     return [
       BottomNavigationBarItem(
+
           activeIcon: Image.asset(
             'assets/images/home_selected.png',
             height: 24,

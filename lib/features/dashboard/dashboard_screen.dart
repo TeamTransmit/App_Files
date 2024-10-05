@@ -24,6 +24,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.white,
         leading: Container(),
         title: Image.asset(
@@ -34,7 +35,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       body: Column(
         children: [
           const SizedBox(
-            height: 30,
+            height: 20,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -82,7 +83,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ),
                         const Row(
                           children: [
-                            Icon(CupertinoIcons.location_solid, color: Colors.white,),
+                            Icon(
+                              CupertinoIcons.location_solid,
+                              color: Colors.white,
+                            ),
                             SizedBox(
                               width: 5,
                             ),
@@ -100,11 +104,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           children: [
                             const Text("26",
                                 style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.w700,
-                                    color: Colors.white
-
-                                )),
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white)),
                             const SizedBox(
                               width: 2,
                             ),
@@ -176,12 +178,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  const SizedBox(
-                    height: 13,
-                  ),
                   const Text("Manage your fields",
                       style: TextStyle(
                         fontSize: 22,
@@ -198,6 +194,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
+                              const SizedBox(
+                                width: 15,
+                              ),
                               InkWell(
                                 onTap: () {
                                   /*Navigator.of(context).push(
@@ -223,8 +222,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                             right: 20,
                                             bottom: 8),
                                         child: Image.asset(
+                                          fit: BoxFit.fill,
                                           'assets/images/image_1.png',
-                                          width: 71,
+                                          width: 90,
                                         ),
                                       ),
                                       const SizedBox(
@@ -232,7 +232,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       ),
                                       const Text("Agri Scan",
                                           style: TextStyle(
-                                              fontSize: 14,
+                                              fontSize: 18,
                                               fontWeight: FontWeight.w600,
                                               color: ColorsUtility.primary)),
                                       const SizedBox(
@@ -241,6 +241,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     ],
                                   ),
                                 ),
+                              ),
+                              SizedBox(
+                                width: 5,
                               ),
                               InkWell(
                                 onTap: () {
@@ -262,7 +265,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                             bottom: 8),
                                         child: Image.asset(
                                           'assets/images/image_2.png',
-                                          width: 71,
+                                          fit: BoxFit.fitWidth,
+                                          width: 90,
                                         ),
                                       ),
                                       const SizedBox(
@@ -270,7 +274,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       ),
                                       const Text("Crop Care",
                                           style: TextStyle(
-                                            fontSize: 14,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.w600,
                                             color: ColorsUtility.primary,
                                           )),
@@ -280,7 +284,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     ],
                                   ),
                                 ),
-                              )
+                              ),
+                              SizedBox(
+                                width: 15,
+                              ),
                             ],
                           ),
                           const SizedBox(
@@ -289,6 +296,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
+                              SizedBox(
+                                width: 15,
+                              ),
                               InkWell(
                                 onTap: () {
                                   Navigator.of(context).push(
@@ -309,7 +319,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                             bottom: 8),
                                         child: Image.asset(
                                           'assets/images/image_3.png',
-                                          width: 71,
+                                          width: 90,
                                         ),
                                       ),
                                       const SizedBox(
@@ -317,7 +327,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       ),
                                       const Text("Field Guide",
                                           style: TextStyle(
-                                            fontSize: 14,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.w600,
                                             color: ColorsUtility.primary,
                                           )),
@@ -327,6 +337,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     ],
                                   ),
                                 ),
+                              ),
+                              SizedBox(
+                                width: 5,
                               ),
                               InkWell(
                                 child: Card(
@@ -341,7 +354,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                             bottom: 8),
                                         child: Image.asset(
                                           'assets/images/image_4.png',
-                                          width: 71,
+                                          width: 90,
                                         ),
                                       ),
                                       const SizedBox(
@@ -349,7 +362,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       ),
                                       const Text("Farmer AI",
                                           style: TextStyle(
-                                            fontSize: 14,
+                                            fontSize: 18,
                                             fontWeight: FontWeight.w600,
                                             color: ColorsUtility.primary,
                                           )),
@@ -359,7 +372,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                     ],
                                   ),
                                 ),
-                              )
+                              ),
+                              SizedBox(
+                                width: 15,
+                              ),
                             ],
                           ),
                           const SizedBox(
@@ -392,7 +408,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           //                   bottom: 8),
                           //               child: Image.asset(
                           //                 'assets/images/image_3.png',
-                          //                 width: 71,
+                          //                 width: 90,
                           //               ),
                           //             ),
                           //             const SizedBox(

@@ -60,10 +60,7 @@ class _WaterReportPageState extends State<WaterReportPage> {
           // Make background transparent to show gradient
           elevation: 0,
           // Remove shadow if not needed
-          child: const Icon(
-            Icons.qr_code,
-            color: Colors.white,
-          ),
+          child: Image.asset('assets/images/scanner.png', width: 25, height: 25, color: Colors.white,),
         ),
       ),
       appBar: AppBar(
